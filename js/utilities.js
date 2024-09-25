@@ -53,4 +53,13 @@ function getTextFieldValueById(id){
 
 
 
+function showSectionById(id){
+    document.getElementById('donation-money-form').classList.add('hidden');
+    document.getElementById('transaction-history').classList.add('hidden');
+    
+    document.getElementById(id).classList.remove('hidden');
+}
+
+
+
 
