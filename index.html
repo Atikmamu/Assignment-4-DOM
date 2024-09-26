@@ -16,25 +16,25 @@
 
   <header class="sticky top-0 z-50 backdrop-blur-md opacity-80">
     <!-- nav bar section -->
-     <nav class="bg-[#F9F7F3]">
+     <nav class="bg-[#F9F7F3] pb-5">
     <div class="navbar container mx-auto">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-            <a href="./blog.html" class="btn bg-[#B4F461] font-bold text-xl mx-8 my-4 no-underline hover:bg-white">Blog</a>
+            <a href="./blog.html" class="btn bg-[#B4F461] font-bold text-lg mx-12 my-4 no-underline text-black flex items-center justify-center mr-5 ">Blog</a>
           </div>
         </div>
       </div>
       <div class="navbar-center">
-        <img class="mr-4" src="./assets/logo.png" />
-        <p class="my-9 font-bold text-xl">Donate Bangladesh</p>
+        <img class="mr-8 mt-3 lg:mr-4" src="./assets/logo.png" />
+        <p class="my-9 font-bold text-xl  px-1 text-black hidden lg:block">Donate Bangladesh</p>
       </div>
 
         <!-- Account Balance start -->
 
       <div class="space-x-2 flex navbar-end">
-        <img class="stat-title" src="./assets/coin.png" alt="" />
-        <div id="account-balance" class="stat-value text-xl font-medium">94000 BDT</div>
+        <img class="stat-title mt-3" src="./assets/coin.png">
+        <div id="account-balance" class="stat-value text-xl font-medium text-black mt-3">9400 BDT</div>
       </div>
     </div>
   </nav>
@@ -44,9 +44,9 @@
     
     <!-- features start -->
 
-    <section class="flex justify-center space-x-4 mx-auto p-3">
-      <button id="show-donation-money-form" class="btn btn-lg font-bold bg-[#B4F461]">Donation</button>
-      <button id="show-transaction-history" class="btn btn-lg text-[#111111B3] bg-white text-lg">
+    <section class="flex justify-center space-x-4 mx-auto p-3" id="btn-color-change">
+      <button id="show-donation-money-form" class="btn btn-lg font-bold">Donation</button>
+      <button id="show-transaction-history" class="btn btn-lg  text-lg">
         History
       </button>
 
@@ -61,9 +61,9 @@
                       <!-- Noakhali Donate section start-->
 
       <section id="add-money-form" class="container mx-auto mb-8">
-        <div class="card lg:card-side bg-base-100 border py-8 pl-8">
+        <div class="card lg:card-side bg-base-100 border mx-5 lg:mx-0 py-8 lg:pl-8">
             <figure>
-              <img
+              <img class="flex-col px-4 lg:px-0"
                 src="assets/noakhali.png">
             </figure>
           <div class="card-body space-x-5">
@@ -75,21 +75,21 @@
             <p>The recent floods in Noakhali, have displaced families and destroyed homes, leaving thousands in desperate need of <br> assistance.Many are struggling to access food and clean water. By donating, you can help provide essential food <br> supplies to those affected and support their recovery.Your contribution can make a significant difference in ensuring <br> these families receive the nourishment they need during this difficult time.</p>
             
             <input
-              type="number" id="input-donate-now"
+              type="text" id="input-donate-now"
               class="border p-3 rounded-lg"
               placeholder="Write Donation Amount"
             />
 
             <dialog id="my_modal_1" class="modal">
-              <div class="modal-box">
+              <div class="modal-box mr-10 lg:mr-0 w-10/12">
                 <h1 class="text-3xl font-bold flex justify-center">Congrates!</h1>
-                <img class="flex justify-center" src="./assets/coin.png">
+                <img class="ml-32 lg:ml-52 mt-5" src="./assets/coin.png">
                 <p class="py-4 flex justify-center font-medium text-lg">You Have Donated for Humankind</p>
                 <h3 class="font-bold text-xl flex justify-center">Successfully</h3>
                 <div class="modal-action">
                   <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn flex justify-center navbar-center">Close Confirmation</button>
+                    <button class="btn mr-16 lg:mr-36">Close Confirmation</button>
                   </form>
                 </div>
               </div>
@@ -108,9 +108,9 @@
         <!-- Feni Donate section start -->
 
       <section class="container mx-auto mb-8">
-        <div class="card lg:card-side bg-base-100 border py-8 pl-8">
+        <div class="card lg:card-side bg-base-100 border mx-5 lg:mx-0 py-8 lg:pl-8">
             <figure>
-              <img
+              <img class="px-4 lg:px-0"
                 src="assets/feni.png">
             </figure>
           <div class="card-body space-x-5">
@@ -122,21 +122,21 @@
             <p>The recent floods in Feni, Bangladesh, have left countless families in urgent need of support.Your donations can help <br> provide immediate relief, including essential items such as food, clean water, clothing, and temporary shelter. Many <br> people have lost their homes and livelihoods, and they need our help to rebuild their lives. By contributing to this <br> cause, you can make a lasting difference in the lives of those affected by this disaster.</p>
             
             <input
-              type="number" id="input-donate-feni"
+              type="text" id="input-donate-feni"
               class="border p-3 rounded-lg"
               placeholder="Write Donation Amount"
             />
 
-            <dialog id="my_modal_1" class="modal">
-              <div class="modal-box">
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box mr-10 lg:mr-0 w-10/12">
                 <h1 class="text-3xl font-bold flex justify-center">Congrates!</h1>
-                <img class="flex justify-center" src="./assets/coin.png">
+                <img class="ml-32 lg:ml-52 mt-5" src="./assets/coin.png">
                 <p class="py-4 flex justify-center">You Have Donated for Humankind</p>
                 <h3 class="font-bold text-xl flex justify-center">Successfully</h3>
                 <div class="modal-action">
                   <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn flex justify-center navbar-center">Close Confirmation</button>
+                    <button class="btn mr-16 lg:mr-36">Close Confirmation</button>
                   </form>
                 </div>
               </div>
@@ -159,9 +159,9 @@
           <!-- Quota Movement section start -->
 
       <section class="container mx-auto mb-20">
-        <div class="card lg:card-side bg-base-100 border py-8 pl-8">
+        <div class="card lg:card-side bg-base-100 border mx-5 lg:mx-0 py-8 lg:pl-8">
             <figure>
-              <img
+              <img class="px-4 lg:px-0"
                 src="assets/quota-protest.png">
             </figure>
           <div class="card-body space-x-5">
@@ -173,21 +173,21 @@
             <p>Support the brave individuals injured during the Quota Movement as they fought for fairness and equal opportunities in <br> Bangladesh. Many have suffered serious injuries and require urgent medical care, rehabilitation, and financial assistance <br> for recovery. Your donation will help provide essential medical treatment, support for their families, and ensure they <br> receive the care they deserve. Stand with those who sacrificed for justice—your contribution.</p>
             
             <input
-              type="number" id="input-donate-quota"
+              type="text" id="input-donate-quota"
               class="border p-3 rounded-lg"
               placeholder="Write Donation Amount"
             />
 
-            <dialog id="my_modal_2" class="modal">
-              <div class="modal-box">
+            <dialog id="my_modal_3" class="modal">
+              <div class="modal-box mr-10 lg:mr-0 w-10/12">
                 <h1 class="text-3xl font-bold flex justify-center">Congrates!</h1>
-                <img class="flex justify-center" src="./assets/coin.png">
+                <img class="ml-32 lg:ml-52 mt-5" src="./assets/coin.png">
                 <p class="py-4 flex justify-center">You Have Donated for Humankind</p>
                 <h3 class="font-bold text-xl flex justify-center">Successfully</h3>
                 <div class="modal-action">
                   <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn flex justify-center navbar-center">Close Confirmation</button>
+                    <button class="btn mr-16 lg:mr-36">Close Confirmation</button>
                   </form>
                 </div>
               </div>
@@ -205,7 +205,7 @@
 
     <!-- history section start -->
      <section id="transaction-history" class="hidden container mx-auto p-4 gap-5">
-      <div id="transaction-container" class="mb-3 text-2xl space-y-3">
+      <div id="transaction-container" class="mb-3 text-2xl space-y-6">
       </div>
      </section>
     <!-- history section end -->
@@ -214,5 +214,10 @@
     <script src="./js/donateNow.js"></script>
     <script src="js/balanceReduce.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/buttoonColorChange.js"></script>
   </body>
+
+  <footer class="footer footer-center bg-[#F9F7F3] text-base-content rounded py-16">
+
+  </footer>
 </html>
